@@ -35,7 +35,7 @@ const ProductsContext = createContext<UseProductsContextType>(initContextState)
 type ChildrenType = { children?: ReactElement | ReactElement[] }
 
 export const ProductProvider = ({ children }: ChildrenType): ReactElement => {
-    const [products, setProducts] = useState<ProductType[]>(initState)
+    const [products] = useState<ProductType[]>(initState)
 
     // useEffect(() => {
     //     const fetchProducts = async (): Promise<ProductType[]> => {
